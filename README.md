@@ -23,4 +23,4 @@ The webpage will be developed using HTML, CSS and Javascript and Git as version 
 * Accessible
 
 ## Interactivty
-* To be decided
+* Light/Dark mode
