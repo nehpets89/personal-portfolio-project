@@ -1,0 +1,46 @@
+
+body {
+    background-color: #2A2536;
+    color: #FBFBFB;
+    font-family: "PT Sans", sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header p {
+    margin-left: 20px;
+    width: 100%;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    gap:40px;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 100px;
+    align-items: center;
+}
+
+.nav-bar {
+    display: flex;
+    gap:40px;
+}
+
+.nav-bar li {
+    list-style: none;
+}
+
+.nav-bar a {
+    color: #FBFBFB;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+#active {
+    color: #58BD90;
+    text-decoration: underline;
+}

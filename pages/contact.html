@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen Roberts Web Developer</title>
+    <link href="../styles/styles.css" type="text/css" rel="stylesheet">
+    <script src="../scripts/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <p>Stephen Roberts // Web Developer</p>
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./contact.html" id="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Get in Touch</h1>
+        <p>Use this form to contact me, share your ideas with me, or to talk to me about my projects. I'll get back to you as soon as I can.</p>
+        <form action="mailto:stephenwlroberts@gmail.com" method="POST">
+            <label for="name">Name:</label>
+            <input id="name" name="name" required minlength="3" maxlength="40">
+            <br>
+            <label for="email">Email:</label>
+            <input id="email" name="email" required minlength="3" maxlength="100">
+            <br>
+            <label for="message">Your message:</label>
+            <textarea id="message" name="message" minlength="20" required rows="8" cols="30" placeholder="Type your message here..."></textarea>
+            <br>
+            <input type="submit" value="Send Message">
+
+
+        </form>
+    </main>
+    
+</body>
+</html>
