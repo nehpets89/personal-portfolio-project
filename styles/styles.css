@@ -82,6 +82,11 @@ h2 {
     width: 50%;
 }
 
+.contact-text {
+    font-size: 20px;
+    line-height: 2.8rem;
+}
+
 .link {
     color:#58BD90;
 }
@@ -175,4 +180,52 @@ footer {
 
 #slider-container p {
     cursor: pointer;
+}
+
+.projects {
+    display: flex;
+    justify-content: flex-start;
+}
+
+h3 {
+    letter-spacing: .2rem;
+}
+
+.project-button {
+    height: 40px;
+    width: 120px;
+    background-color: #FBFBFB;
+    color: #2A2536;
+    border-radius: 5px;
+
+}
+
+.project-button:hover {
+    background-color: #58BD90;
+}
+
+.project-button:active {
+    background-color: #58BD90;
+}
+
+.textbox {
+    border-radius: 5px;
+    margin: 0 80px 10px;
+    width: 300px;
+    height: 25px;
+}
+
+.textarea {
+    border-radius: 5px;
+    margin-left: 25px;
+}
+
+#message-label {
+    position: relative;
+    bottom: 105px;
+}
+
+
+#contact-button {
+    margin: 20px auto;
 }

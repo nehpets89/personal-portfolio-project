@@ -10,9 +10,11 @@ function moveButton() {
     if(slider.style.left === '4px') {
         slider.style.left = '29px';
         sliderBackground.style.backgroundColor = '#58BD90';
+        lightMode();
     } else {
         slider.style.left = '4px';
         sliderBackground.style.backgroundColor = '';
+        darkMode();
     }
 
 };
@@ -21,6 +23,7 @@ function moveToDark() {
     if(slider.style.left != '4px') {
         slider.style.left = '4px';
         sliderBackground.style.backgroundColor = '';
+        darkMode();
     }
 };
 
@@ -28,8 +31,47 @@ function moveToLight() {
     if(slider.style.left === '4px') {
         slider.style.left = '29px';
         sliderBackground.style.backgroundColor = '#58BD90';
+        lightMode();
     }
 };
+
+function lightMode() {
+    let bground = document.body;
+    bground.style.backgroundColor = '#FBFBFB';
+    bground.style.color = '#2A2536';
+    let skills = document.getElementsByClassName('skill-caption');
+    skills = Array.from(skills);
+    skills.forEach(skill => {
+        skill.style.color = '#2A2536';
+    });
+    let portrait = document.getElementById('portrait');
+    portrait.style.boxShadow = '5px 5px black';
+    let project = document.getElementsByClassName('project-image');
+    project = Array.from(project);
+    project.forEach(pro => {
+        pro.style.boxShadow = '3px 3px black';
+
+});
+}
+
+
+function darkMode(){
+    let bground = document.body;
+    bground.style.backgroundColor = '';
+    bground.style.color = '';
+    let skills = document.getElementsByClassName('skill-caption');
+    skills = Array.from(skills);
+    skills.forEach(skill => {
+        skill.style.color = '';
+    });
+    let portrait = document.getElementById('portrait');
+    portrait.style.boxShadow = '';
+    let project = document.getElementsByClassName('project-image');
+    project = Array.from(project);
+    project.forEach(pro => {
+        pro.style.boxShadow = '';
+    });
+}
 
 slider.addEventListener('click', moveButton);
 sliderBackground.addEventListener('click', moveButton);
