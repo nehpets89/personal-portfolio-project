@@ -36,18 +36,18 @@ nav {
     list-style: none;
 }
 
-.nav-bar a {
+.nav-link {
     color: #FBFBFB;
     text-decoration: none;
     font-size: 1.1rem;
 }
 
-#active {
-    text-decoration: underline;
+.nav-link:hover {
+    color: #58BD90;
 }
 
-.nav-bar a:hover {
-    color: #58BD90;
+#active {
+    text-decoration: underline;
 }
 
 section,
@@ -74,6 +74,7 @@ h2 {
 .description-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .description {
@@ -98,8 +99,9 @@ h2 {
 
 }
 
-.skills-container{
+.skills-container {
     display: flex;
+    flex-wrap: wrap;
     
 }
 figure {
@@ -228,4 +230,33 @@ h3 {
 
 #contact-button {
     margin: 20px auto;
+}
+
+@media screen and (max-width: 625px) {
+    header {
+        justify-content: center;
+        
+    }
+
+    
+    nav {
+        justify-content: center;
+        margin-right: 10px;
+
+    }
+
+
+
+}
+
+@media screen and (max-width: 1780px) {
+    .description {
+        width: 80%;
+        line-height: 1.5rem;
+    }
+    .portrait {
+        max-width: 100%;
+        height: auto;
+    }
+    
 }

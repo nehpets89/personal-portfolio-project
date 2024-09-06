@@ -50,6 +50,11 @@ function lightMode() {
     project = Array.from(project);
     project.forEach(pro => {
         pro.style.boxShadow = '3px 3px black';
+    let navLink = document.getElementsByClassName('nav-link');
+    navLink = Array.from(navLink);
+    navLink.forEach(link => {
+        link.style.color = '#2A2536';
+    });
 
 });
 }
@@ -70,6 +75,11 @@ function darkMode(){
     project = Array.from(project);
     project.forEach(pro => {
         pro.style.boxShadow = '';
+    });
+    let navLink = document.getElementsByClassName('nav-link');
+    navLink = Array.from(navLink);
+    navLink.forEach(link => {
+        link.style.color = '';
     });
 }
 
