@@ -23,30 +23,43 @@
     <main>
         <section>
             <h1>About Me</h1>
-            <p>My name is Stephen, I am a Computer Science graduate that now specialises in Web Development. I am proficient in HTML, CSS and Javascipt. I am also
-                founder of a Web Development business, <a href="#">Overdrive Websites</a> and manage a team of talented individuals that specialise in the development
-                of websites and web applications. This website is a portfolio that highlights my skills and is a catalogue of my own personal projects.
-                If you'd like to discuss any of my projects or want to collaborate on future projects, please get in touch.</p>
+            <div class="header-underline" role="presentation"></div>
+            <div class="description-container">
+            <p class="description">Hi, I’m Stephen, a passionate Computer Science graduate turned web development specialist. With a deep proficiency in HTML, CSS, and JavaScript,
+                 I’ve had the pleasure of turning creative ideas into functional, dynamic websites and applications that stand out in today’s digital world.
+                I’m also the proud founder of <a href="#" class="link">Overdrive Websites</a>, a cutting-edge web development company where I lead a team of highly skilled professionals. 
+                Together, we build immersive websites and powerful web applications tailored to meet the needs of our clients. From sleek landing pages to robust
+                 e-commerce platforms, we push the boundaries of web design and functionality.                
+                This portfolio showcases my expertise, ranging from personal projects that reflect my love for innovation to professional collaborations
+                 that highlight my leadership in the web development space. Whether you’re here to browse or are interested in a potential collaboration,
+                 I’d love to connect and discuss ideas that could shape the future of the web.
+                <br>
+                Let’s build something amazing together!</p>
             </p>
-            <img src="#">
+            <img class="portrait" src="./images/Stephen_cartoon.png" alt="An image of Stephen">
+            </div>
         </section>
         <section>
             <h2>Skills</h2>
+        <div class="header-underline" role="presentation"></div>
+        <div class="skills-container">
             <figure>
-                <img src="#">
+                <img src="./images/html5-logo.png" alt="A logo that represents HTML5" class="skills-logos">
                 <figcaption>HTML5</figcaption>
             </figure>
             <figure>
-                <img src="#">
+                <img src="./images/css-logo.png" alt="A logo that represents CSS" class="skills-logos">
                 <figcaption>CSS</figcaption>
             </figure>
             <figure>
-                <img src="#">
+                <img src="./images/javascript-logo.png" alt="A logo that represents JavaScript" class="skills-logos">
                 <figcaption>JavaScript</figcaption>
             </figure>
+        </div>
         </section>
         <section>
             <h2>Projects</h2>
+            <div class="header-underline" role="presentation"></div>
             <h3>Project Title</h3>
             <p>Project description</p>
             <button>View Project</button>
@@ -54,8 +67,20 @@
         </section>
         <section>
             <h2>Contact</h2>
-            <p>Email me at stephenwlroberts@gmail.com or use the contact form <a href="./pages/contact.html">here</a>.</p>
+            <div class="header-underline" role="presentation"></div>
+            <p>Email me at stephenwlroberts@gmail.com or use the contact form <a href="./pages/contact.html" class="link">here</a>.</p>
         </section>
+        <footer>
+            <div id="slider-container">
+            <p id="dark-slide">Dark</p>
+            <label class="switch">
+                <input id="slide-button" type="checkbox">
+                <span id="slider-before"></span>
+                <span id="slider"></span>
+            </label>
+            <p id="light-slide">Light</p>
+            </div>
+        </footer>
     </main>
     
 </body>

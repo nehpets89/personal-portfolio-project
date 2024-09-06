@@ -8,12 +8,14 @@ body {
 header {
     display: flex;
     align-items: center;
+    border-bottom: 2px solid #58BD90;
 }
 
 header p {
     margin-left: 20px;
     width: 100%;
     font-weight: 600;
+
 }
 
 nav {
@@ -41,6 +43,136 @@ nav {
 }
 
 #active {
-    color: #58BD90;
     text-decoration: underline;
+}
+
+.nav-bar a:hover {
+    color: #58BD90;
+}
+
+section,
+footer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header-underline {
+    background-color: #58BD90;
+    height: 2px;
+    width: 200px;
+    position:  relative;
+    bottom: 20px;
+        
+}
+
+h1,
+h2 {
+    font-size: 48px;
+    letter-spacing: 0.8rem;
+}
+
+.description-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.description {
+    font-size: 20px;
+    line-height: 2.8rem;
+    width: 50%;
+}
+
+.link {
+    color:#58BD90;
+}
+
+.skills-logos {
+    width: 80px;
+    height: auto;
+    
+
+}
+
+.skills-container{
+    display: flex;
+    
+}
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+figcaption {
+    margin-top: 10px;
+    color: #FBFBFB;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    
+}
+
+.portrait {
+    width: 700px;
+    height: auto;
+    border-radius: 10px;
+    border: 8px solid #58BD90;
+}
+
+footer {
+    margin-top: 40px;
+
+
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+#slider {
+    position:absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #CCCCCC;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+#slider-before {
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom:2px;
+    background-color: #FBFBFB;
+    transition: .4s;
+    border-radius: 50%;
+    z-index:1;
+    cursor: pointer;
+
+}
+
+#slider-container {
+    width: 300px;
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+}
+
+#slider-container p {
+    cursor: pointer;
 }
